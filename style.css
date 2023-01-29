@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "roboto",sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/cont2.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 140px;
+    box-sizing: border-box;
+    height:18%;
+}
+header h1{
+    /* padding: 25px 0px; */
+    font-size: 3rem;
+    font-weight: 600;
+    color: lightgray;
+    text-shadow: 10px 5px 25px darkslategray;
+    line-height: 6.3rem;
+
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+    line-height: 3.2rem;
+    /* margin: 25px 20px; */
+
+}
+header nav ul li a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 25px;
+    /* line-height: 1.5rem; */
+    /* height: 100px; */
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width:600px){
+    
+    header{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    header h1{
+        line-height: 1.2;
+    }
+    header nav ul{
+        line-height: 0;
+    }
+    header nav ul li a{
+        margin: 0 10px;
+    }
+
+}
+
+header nav ul li a:hover{
+    color: black;
+    /* font-weight: 600; */
+    font-size: 35px;
+    background-color: rgb(84, 228, 221);
+}
+
+
+.home{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/cont2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 40px 20px;
+    height: 570px;
+    color: white;    
+}
+
+
+.home .txt .first-letter{
+    color: rgb(3, 3, 36);
+}
+.home .txt{
+    position: relative;
+    left: 120px;
+    top: 170px;
+}
+.home .txt .hello,.surname,.name{
+    color: lightgray;
+    margin: 25px 0;
+    text-shadow: 2px 5px 25px rgb(84, 84, 155);
+}
+
+.home .txt h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.home .txt p{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(84, 228, 221);
+}
+
+
+.home .img img{
+    width: 300px;
+    height: 350px;
+    border-radius: 6%;
+    box-shadow:5px 5px 25px 5px black;
+    position: relative;
+    left: 270px;
+    top: 170px;
+    margin-left: 200px;
+}
+.about{
+    /* background-color: #97b4d1; */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/v4.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    padding: 20px;
+}
+.about .main-head{
+    padding: 15px 0 15px 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    /* color: rgb(167, 235, 231); */
+    color: darkgray;
+    text-shadow: 5px 5px 25px darkslategray;
+}
+
+.about .explaination{
+    padding: 10px 90px 30px 90px;
+    text-align: center;
+    /* font-weight:bold; */
+    font-size: 20px;
+    color: lightgray;
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.about .education{
+    width: 23rem;
+    height: 19rem;
+    margin: 0 5px 0 37.5px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.about .edu-heading{
+    width: 23rem;
+    height: 19rem;
+    background-color: lightgray;
+    font-size: 2.5rem;
+    font-weight:lighter;
+    text-align: center;
+    line-height: 19rem;
+    color: black;
+    border-radius: 4%;
+
+
+}
+.about .edu-content{
+    width: 23rem;
+    height: 19rem;
+    background-color: #82a6cb;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotateX(90deg);
+    box-shadow: 5px 5px 10px  black;
+    color: #214177;
+    border-radius: 4%;
+
+}
+
+.education:hover .edu-content{
+    transform: rotateX(0deg);
+    transition: all 0.5s;
+}
+
+.edu-content p,ul li{
+    /* text-align: center; */
+    padding: 6px 3px;
+    margin: 22px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.about .all-quality{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+
+}
+
+.skills{
+    background: linear-gradient(rgba(218, 229, 212, 0.5), rgba(140, 139, 139, 0.5)),url(images/back.avif);
+    height: 490px;
+}
+
+.skills .skill-head{
+    font-size: 2.5rem;
+    font-weight:bolder;
+    padding: 20px 0;
+    text-align: center;
+    color: darkslategray;
+}
+
+.skills .main-div-skill{
+    width: 50%;
+    height: 300px;
+    background-color: lightgray;
+    margin: 15px 320px 9px 350px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 10px 25px darkslategray;
+}
+
+.main-div-skill .p-lang{
+    padding:30px 30px 0 100px;
+}
+
+.main-div-skill .web-dev{
+    padding:30px 50px;
+}
+
+.skills .main-div-skill .p-lang, .p-lang ul li, .main-div-skill .web-dev, .web-dev ul li{
+    color: black;
+}
+
+.contact-me{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/cont2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height:480px;
+}
+
+.contact-me .contact {
+    display: flex;
+    justify-content: space-between;
+
+    /* margin: 0 150px; */
+}
+.contact-me .address{
+    position: relative;
+    left: 50px;
+    top: 100px;
+    color: lightgray;
+    font-size: 30px;
+    padding: 70px 0px 0px 120px;
+    text-align: right;
+    /* font-weight: bold; */
+}
+.contact-me .contact-form{
+    position: relative;
+    right: 350px;
+    top: 100px;
+    box-shadow: 5px 5px 25px white, -5px -5px 25px white;
+    width: 360px;
+    height: 300px;
+    padding-left: 40px; 
+    padding-top: 20px;  
+    background: linear-gradient(to right,rgba(10, 10, 10, 0.5), rgba(150, 148, 148, 0.5));
+}
+.contact-form .form input, textarea{
+    margin: 30px 0 5px 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.contact-form input[type="submit"]{
+    background-color: white;
+    padding: 5px;
+    border: none;
+    color: black;
+    border-radius: 10%;
+}
+
+.contact-form .form input::placeholder{
+    color: white;
+}
+.contact-form .form textarea::placeholder{
+    color: white;
+}
+
+footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/cont2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px;
+}
+
+footer img{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+footer img:hover{
+    background-color: lightgray;
+    border-radius: 5px;
+}
